@@ -1,6 +1,7 @@
 // Step 1: Import React
 import * as React from 'react'
 import Layout from '../components/layout'
+import { StaticImage } from 'gatsby-plugin-image'
 
 
 
@@ -8,8 +9,12 @@ import Layout from '../components/layout'
 const IndexPage = () => {
   return (
     <Layout pageTitle="Home Page">
-    <p>I'm making this by following the Gatsby Tutorial.</p>
-  </Layout>
+      <p>I'm making this by following the Gatsby Tutorial.</p>
+      <StaticImage
+        alt="Website Guida Valle dei Templi made with Wordpress"
+        src="../images/sito-guida-valle-dei-templi-home.png"
+      />
+    </Layout>
   )
 }
 
